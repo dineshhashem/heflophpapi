@@ -7,7 +7,8 @@ function GetToken($key, $secret)
 {
 	$headers = array(
 			'Accept' => 'application/json, text/javascript, */*; q=0.01',
-			'Accept-Language' => 'pt-BR', 'Referer' => 'https://app.heflo.com/Workspace/Home',
+			'Accept-Language' => 'pt-BR', 
+			'Referer' => 'https://app.heflo.com/Workspace/Home',
 			'Content-Type' => 'application/x-www-form-urlencoded',
 			'Origin' => 'https://app.heflo.com',
 			'Connection' => 'keep-alive'
@@ -158,7 +159,7 @@ function GetRecordList($domain, $classoid, $uid, $listentityoid, $token)
 	$headers[] = 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0';
 	$headers[] = 'Accept: application/json';
 	$headers[] = 'Accept-Language: pt-BR';
-	$headers[] = 'Referer: https://app.heflo.com/Workspace/companies';
+	$headers[] = 'Referer: https://app.heflo.com/Workspace/Home';
 	$headers[] = 'Content-Type: application/json';
 	$headers[] = 'Authorization: Bearer '. $token;
 	$headers[] = 'Gettestobjects: false';
